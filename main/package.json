@@ -1,0 +1,17 @@
+{
+  "name": "main",
+  "packageManager": "yarn@4.7.0",
+  "scripts": {
+    "watch": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "^6.2.2"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.109.0",
+    "@types/node": "^22.13.11",
+    "typescript": "^5.8.2"
+  }
+}

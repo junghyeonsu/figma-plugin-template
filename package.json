@@ -1,0 +1,20 @@
+{
+  "name": "figma-plugin-template",
+  "version": "1.0.0",
+  "license": "MIT",
+  "packageManager": "yarn@4.7.0",
+  "workspaces": [
+    "ui",
+    "main"
+  ],
+  "scripts": {
+    "build": "yarn workspace ui build && yarn workspace main build",
+    "dev": "concurrently \"yarn workspace ui dev\" \"yarn workspace main dev\"",
+    "watch": "concurrently \"yarn workspace ui watch\" \"yarn workspace main watch\""
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "concurrently": "^9.1.2",
+    "typescript": "^5.8.2"
+  }
+}
