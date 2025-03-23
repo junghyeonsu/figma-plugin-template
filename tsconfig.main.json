@@ -13,5 +13,5 @@
     "declaration": true,
     "declarationMap": true
   },
-  "include": ["src/main"]
+  "include": ["src/main", "src/shared"]
 }

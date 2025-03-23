@@ -1,11 +1,7 @@
-import { useEffect } from "react";
+import { events } from "../shared/event";
 
 function App() {
-  useEffect(() => {
-    window.addEventListener("message", (event) => {
-      console.log(event.data);
-    });
-  }, []);
+  const notify = () => events("notify").emit({ message: "hello world" });
 
   return (
     <div
@@ -17,7 +13,9 @@ function App() {
         alignItems: "center",
       }}
     >
-      hello world
+      <button type="button" onClick={notify}>
+        hello world
+      </button>
     </div>
   );
 }
