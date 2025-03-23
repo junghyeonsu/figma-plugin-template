@@ -1,7 +1,7 @@
 {
-	"name": "Figma Plugin Template",
-	"api": "1.0.0",
-	"main": "main/dist/code.mjs",
-	"ui": "ui/dist/index.html",
-	"editorType": ["figma"]
+  "name": "Figma Plugin Template",
+  "api": "1.0.0",
+  "main": "dist/main/code.js",
+  "ui": "dist/index.html",
+  "editorType": ["figma"]
 }
